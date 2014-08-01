@@ -1,6 +1,7 @@
 #ifndef MODEL_H
 #define MODEL_H
 
+#include "json/json/json.h"
 #include <string>
 #include <memory>
 #include <map>
@@ -15,6 +16,7 @@ private:
 	std::map<std::string, std::shared_ptr<Terr>> terrs;
 
 	Model(const std::string& filename);
+	void create_terr(const Json::Value& val);
 
 };
 

@@ -1,11 +1,11 @@
-#ifndef REG_TERR_H
-#define REG_TERR_H
+#ifndef TWO_COAST_TERR_H
+#define TWO_COAST_TERR_H
 
 #include "Terr.h"
 
-class Reg_terr : public Terr {
+class Two_coast_terr : public Terr {
 public:
-	Reg_terr(const Json::Value& loc,
+	Two_coast_terr(const Json::Value& loc,
 		const Json::Value locs,
 		std::map<std::string, std::shared_ptr<Terr>>& terrs)
 		: Terr{loc, locs, terrs}
@@ -16,4 +16,4 @@ public:
 };
 
 
-#endif // REG_TERR_H
+#endif // TWO_COAST_TERR_H

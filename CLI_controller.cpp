@@ -19,20 +19,27 @@ CLI_controller::CLI_controller()
 
 void CLI_controller::run()
 {
-		// Model model = Model("default_world.json");
-		list<unique_ptr<Order>> orders = list<unique_ptr<Order>>();
+	try {
+		Model& model = Model::get();
+	} catch(exception& e) {
+		cout << "Model creation failed" << endl;
+		cout << e.what() << endl;
+		return;
+	}
 
-		// main input and game loop
-		while(true) {
-			try {
-				while(is_another_order()) {
-					orders.push_back(get_next_order()); // get order
-				}
-			} catch(exception& e) {
-				cout << "Unknown error caught:" << endl;
-				cout << e.what() << endl;
+	list<unique_ptr<Order>> orders = list<unique_ptr<Order>>();
+
+	// main input and game loop
+	while(true) {
+		try {
+			while(is_another_order()) {
+				orders.push_back(get_next_order()); // get order
 			}
-			// process orders
+		} catch(exception& e) {
+			cout << "Unknown error caught:" << endl;
+			cout << e.what() << endl;
 		}
-		// game is won or exited
+		// process orders
+	}
+	// game is won or exited
 }

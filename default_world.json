@@ -1,7 +1,7 @@
 {
-	"locations": {
-		"_comment": "England and the seas that border it AND Mid-Adlantic",
-		"nat": {
+	"locations": [
+		{
+			"short_name": "nat",
 			"adjacent": [
 				"nrg",
 				"cly",
@@ -12,48 +12,70 @@
 			"terrain": "sea",
 			"display_name": "North Atlantic Ocean"
 		},
-		"nrg": {
+		{
+			"short_name": "nrg",
 			"adjacent": [
 				"nat",
 				"cly",
 				"edi",
-				"nth"
+				"nth",
+				"nwy",
+				"bar"
 			],
 			"terrain": "sea",
 			"display_name": "Norwegian Sea"
 		},
-		"nth": {
+		{
+			"short_name": "nth",
 			"adjacent": [
 				"nrg",
 				"edi",
 				"yor",
 				"lon",
-				"eng"
+				"eng",
+				"bel",
+				"hol",
+				"hel",
+				"den",
+				"ska",
+				"nwy"
 			],
 			"terrain": "sea",
 			"display_name": "North Sea"
 		},
-		"eng": {
+		{
+			"short_name": "eng",
 			"adjacent": [
 				"nth",
 				"mid",
 				"iri",
 				"wal",
-				"lon"
+				"lon",
+				"bel",
+				"pic",
+				"bre"
 			],
 			"terrain": "sea",
 			"display_name": "English Channel"
 		},
-		"mid": {
+		{
+			"short_name": "mid",
 			"adjacent": [
 				"nat",
 				"iri",
-				"eng"
+				"eng",
+				"bre",
+				"gas",
+				"spa",
+				"por",
+				"wes",
+				"naf"
 			],
 			"terrain": "sea",
 			"display_name": "Mid-Adlantic Ocean"
 		},
-		"iri": {
+		{
+			"short_name": "iri",
 			"adjacent": [
 				"eng",
 				"mid",
@@ -64,7 +86,8 @@
 			"terrain": "sea",
 			"display_name": "Irish Sea"
 		},
-		"cly": {
+		{
+			"short_name": "cly",
 			"adjacent": [
 				"nat",
 				"nrg",
@@ -74,7 +97,8 @@
 			"terrain": "land",
 			"display_name": "Clyde"
 		},
-		"edi": {
+		{
+			"short_name": "edi",
 			"adjacent": [
 				"nrg",
 				"nth",
@@ -85,7 +109,8 @@
 			"terrain": "land",
 			"display_name": "Edinburgh"
 		},
-		"yor": {
+		{
+			"short_name": "yor",
 			"adjacent": [
 				"nth",
 				"lon",
@@ -96,7 +121,8 @@
 			"terrain": "land",
 			"display_name": "Yorkshire"
 		},
-		"lon": {
+		{
+			"short_name": "lon",
 			"adjacent": [
 				"nth",
 				"eng",
@@ -106,7 +132,8 @@
 			"terrain": "land",
 			"display_name": "London"
 		},
-		"wal": {
+		{
+			"short_name": "wal",
 			"adjacent": [
 				"eng",
 				"iri",
@@ -117,7 +144,8 @@
 			"terrain": "land",
 			"display_name": "Wales"
 		},
-		"lvp": {
+		{
+			"short_name": "lvp",
 			"adjacent": [
 				"iri",
 				"nat",
@@ -129,8 +157,8 @@
 			"terrain": "land",
 			"display_name": "Liverpool"
 		},
-		"_comment1": "Bar, Hel, Ska, and the Baltic",
-		"bar": {
+		{
+			"short_name": "bar",
 			"adjacent": [
 				"stp",
 				"nwy",
@@ -139,7 +167,8 @@
 			"terrain": "sea",
 			"display_name": "Barents Sea"
 		},
-		"hel": {
+		{
+			"short_name": "hel",
 			"adjacent": [
 				"den",
 				"kie",
@@ -149,7 +178,8 @@
 			"terrain": "sea",
 			"display_name": "Helogoland Bight"
 		},
-		"ska": {
+		{
+			"short_name": "ska",
 			"adjacent": [
 				"nwy",
 				"swe",
@@ -159,7 +189,8 @@
 			"terrain": "sea",
 			"display_name": "Skagerrack"
 		},
-		"bal": {
+		{
+			"short_name": "bal",
 			"adjacent": [
 				"swe",
 				"bot",
@@ -171,7 +202,8 @@
 			"terrain": "sea",
 			"display_name": "Baltic Sea"
 		},
-		"bot": {
+		{
+			"short_name": "bot",
 			"adjacent": [
 				"swe",
 				"fin",
@@ -182,8 +214,8 @@
 			"terrain": "sea",
 			"display_name": "Gulf of Bothnia"
 		},
-		"_comment2": "Mediterranian Sea and Bla",
-		"wes": {
+		{
+			"short_name": "wes",
 			"adjacent": [
 				"spa",
 				"gol",
@@ -208,7 +240,8 @@
 				]
 			}
 		},
-		"gol": {
+		{
+			"short_name": "gol",
 			"adjacent": [
 				"mar",
 				"pie",
@@ -220,7 +253,8 @@
 			"terrain": "sea",
 			"display_name": "Gulf of Lyons"
 		},
-		"tyn": {
+		{
+			"short_name": "tyn",
 			"adjacent": [
 				"gol",
 				"tus",
@@ -233,7 +267,8 @@
 			"terrain": "sea",
 			"display_name": "Tyrrhenian Sea"
 		},
-		"adr": {
+		{
+			"short_name": "adr",
 			"adjacent": [
 				"tri",
 				"alb",
@@ -244,7 +279,8 @@
 			"terrain": "sea",
 			"display_name": "Adriatic Sea"
 		},
-		"ion": {
+		{
+			"short_name": "ion",
 			"adjacent": [
 				"adr",
 				"alb",
@@ -259,7 +295,8 @@
 			"terrain": "sea",
 			"display_name": "Ionian Sea"
 		},
-		"aeg": {
+		{
+			"short_name": "aeg",
 			"adjacent": [
 				"bul",
 				"bla",
@@ -272,7 +309,8 @@
 			"terrain": "sea",
 			"display_name": "Aegean Sea"
 		},
-		"eas": {
+		{
+			"short_name": "eas",
 			"adjacent": [
 				"ion",
 				"aeg",
@@ -282,7 +320,8 @@
 			"terrain": "sea",
 			"display_name": "Eastern Mediterranian"
 		},
-		"bla": {
+		{
+			"short_name": "bla",
 			"adjacent": [
 				"sev",
 				"arm",
@@ -295,8 +334,8 @@
 			"terrain": "sea",
 			"display_name": "Black Sea"
 		},
-		"_comment3": "Scandanavia + Denmark",
-		"nwy": {
+		{
+			"short_name": "nwy",
 			"adjacent": [
 				"nrg",
 				"bar",
@@ -309,7 +348,8 @@
 			"terrain": "sea",
 			"display_name": "Norway"
 		},
-		"swe": {
+		{
+			"short_name": "swe",
 			"adjacent": [
 				"nwy",
 				"fin",
@@ -321,7 +361,8 @@
 			"terrain": "sea",
 			"display_name": "Sweden"
 		},
-		"den": {
+		{
+			"short_name": "den",
 			"adjacent": [
 				"ska",
 				"swe",
@@ -333,8 +374,8 @@
 			"terrain": "sea",
 			"display_name": "Denmark"
 		},
-		"_comment4": "Iberian peninsula",
-			"por": {
+		{
+			"short_name": "por",
 			"adjacent": [
 				"mid",
 				"spa"
@@ -342,7 +383,8 @@
 			"terrain": "sea",
 			"display_name": "Portugal"
 		},
-			"spa": {
+		{
+			"short_name": "spa",
 			"adjacent": [
 				"mid",
 				"gas",
@@ -354,8 +396,8 @@
 			"terrain": "sea",
 			"display_name": "Spain"
 		},
-		"_comment5": "North Africa",
-		"naf": {
+		{
+			"short_name": "naf",
 			"adjacent": [
 				"mid",
 				"wes",
@@ -364,7 +406,8 @@
 			"terrain": "sea",
 			"display_name": "North Africa"
 		},
-		"tun": {
+		{
+			"short_name": "tun",
 			"adjacent": [
 				"naf",
 				"wes",
@@ -374,8 +417,8 @@
 			"terrain": "sea",
 			"display_name": "Tunisia"
 		},
-		"_comment6": "Belgium and Holland",
-		"bel": {
+		{
+			"short_name": "bel",
 			"adjacent": [
 				"nth",
 				"hol",
@@ -387,7 +430,8 @@
 			"terrain": "sea",
 			"display_name": "Belgium"
 		},
-		"hol": {
+		{
+			"short_name": "hol",
 			"adjacent": [
 				"nth",
 				"hel",
@@ -398,8 +442,8 @@
 			"terrain": "sea",
 			"display_name": "Holland"
 		},
-		"_comment7": "France",
-			"bre": {
+		{
+			"short_name": "bre",
 			"adjacent": [
 				"mid",
 				"eng",
@@ -410,7 +454,8 @@
 			"terrain": "sea",
 			"display_name": "Brest"
 		},
-		"pic": {
+		{
+			"short_name": "pic",
 			"adjacent": [
 				"eng",
 				"bel",
@@ -421,7 +466,8 @@
 			"terrain": "sea",
 			"display_name": "Picardy"
 		},
-		"bur": {
+		{
+			"short_name": "bur",
 			"adjacent": [
 				"bel",
 				"ruh",
@@ -434,7 +480,8 @@
 			"terrain": "sea",
 			"display_name": "Burgundy"
 		},
-		"mar": {
+		{
+			"short_name": "mar",
 			"adjacent": [
 				"bur",
 				"pie",
@@ -445,7 +492,8 @@
 			"terrain": "sea",
 			"display_name": "Marseilles"
 		},
-		"gas": {
+		{
+			"short_name": "gas",
 			"adjacent": [
 				"bre",
 				"par",
@@ -457,7 +505,8 @@
 			"terrain": "sea",
 			"display_name": "Gascony"
 		},
-		"par": {
+		{
+			"short_name": "par",
 			"adjacent": [
 				"pic",
 				"bur",
@@ -467,8 +516,8 @@
 			"terrain": "sea",
 			"display_name": "Paris"
 		},
-		"_comment8": "Germany",
-		"kie": {
+		{
+			"short_name": "kie",
 			"adjacent": [
 				"den",
 				"bal",
@@ -481,7 +530,8 @@
 			"terrain": "sea",
 			"display_name": "Kiel"
 		},
-		"ber": {
+		{
+			"short_name": "ber",
 			"adjacent": [
 				"bal",
 				"pru",
@@ -492,7 +542,8 @@
 			"terrain": "sea",
 			"display_name": "Berlin"
 		},
-		"pru": {
+		{
+			"short_name": "pru",
 			"adjacent": [
 				"bal",
 				"lvn",
@@ -503,7 +554,8 @@
 			"terrain": "sea",
 			"display_name": "Prussia"
 		},
-		"sil": {
+		{
+			"short_name": "sil",
 			"adjacent": [
 				"pru",
 				"war",
@@ -515,7 +567,8 @@
 			"terrain": "sea",
 			"display_name": "Silesia"
 		},
-		"mun": {
+		{
+			"short_name": "mun",
 			"adjacent": [
 				"ber",
 				"sil",
@@ -528,7 +581,8 @@
 			"terrain": "sea",
 			"display_name": "Munich"
 		},
-		"ruh": {
+		{
+			"short_name": "ruh",
 			"adjacent": [
 				"kie",
 				"mun",
@@ -539,8 +593,8 @@
 			"terrain": "sea",
 			"display_name": "Ruhr"
 		},
-		"_comment9": "Italy",
-			"pie": {
+		{
+			"short_name": "pie",
 			"adjacent": [
 				"tyr",
 				"ven",
@@ -550,7 +604,8 @@
 			"terrain": "sea",
 			"display_name": "Piedmont"
 		},
-		"ven": {
+		{
+			"short_name": "ven",
 			"adjacent": [
 				"tyr",
 				"tri",
@@ -563,7 +618,8 @@
 			"terrain": "sea",
 			"display_name": "Venice"
 		},
-		"apu": {
+		{
+			"short_name": "apu",
 			"adjacent": [
 				"adr",
 				"ion",
@@ -574,7 +630,8 @@
 			"terrain": "sea",
 			"display_name": "Apulia"
 		},
-		"nap": {
+		{
+			"short_name": "nap",
 			"adjacent": [
 				"apu",
 				"ion",
@@ -584,7 +641,8 @@
 			"terrain": "sea",
 			"display_name": "Naples"
 		},
-		"rom": {
+		{
+			"short_name": "rom",
 			"adjacent": [
 				"ven",
 				"apu",
@@ -595,7 +653,8 @@
 			"terrain": "sea",
 			"display_name": "Rome"
 		},
-		"tus": {
+		{
+			"short_name": "tus",
 			"adjacent": [
 				"ven",
 				"rom",
@@ -606,8 +665,8 @@
 			"terrain": "sea",
 			"display_name": "Tuscany"
 		},
-		"_comment10": "Austria-Hungary",
-		"boh": {
+		{
+			"short_name": "boh",
 			"adjacent": [
 				"sil",
 				"gal",
@@ -618,7 +677,8 @@
 			"terrain": "sea",
 			"display_name": "Bohemia"
 		},
-		"gal": {
+		{
+			"short_name": "gal",
 			"adjacent": [
 				"war",
 				"ukr",
@@ -631,7 +691,8 @@
 			"terrain": "sea",
 			"display_name": "Galicia"
 		},
-		"bud": {
+		{
+			"short_name": "bud",
 			"adjacent": [
 				"gal",
 				"rum",
@@ -642,7 +703,8 @@
 			"terrain": "sea",
 			"display_name": "Budapest"
 		},
-		"tri": {
+		{
+			"short_name": "tri",
 			"adjacent": [
 				"vie",
 				"bud",
@@ -655,7 +717,8 @@
 			"terrain": "sea",
 			"display_name": "Trieste"
 		},
-		"tyr": {
+		{
+			"short_name": "tyr",
 			"adjacent": [
 				"boh",
 				"vie",
@@ -667,7 +730,8 @@
 			"terrain": "sea",
 			"display_name": "Tyrolia"
 		},
-		"vie": {
+		{
+			"short_name": "vie",
 			"adjacent": [
 				"boh",
 				"gal",
@@ -678,8 +742,8 @@
 			"terrain": "sea",
 			"display_name": "Vienna"
 		},
-		"_comment11": "Turkey",
-		"con": {
+		{
+			"short_name": "con",
 			"adjacent": [
 				"bla",
 				"ank",
@@ -690,7 +754,8 @@
 			"terrain": "sea",
 			"display_name": "Constantinople"
 		},
-		"ank": {
+		{
+			"short_name": "ank",
 			"adjacent": [
 				"bla",
 				"arm",
@@ -700,7 +765,8 @@
 			"terrain": "sea",
 			"display_name": "Ankara"
 		},
-		"arm": {
+		{
+			"short_name": "arm",
 			"adjacent": [
 				"sev",
 				"syr",
@@ -711,7 +777,8 @@
 			"terrain": "sea",
 			"display_name": "Armenia"
 		},
-		"syr": {
+		{
+			"short_name": "syr",
 			"adjacent": [
 				"arm",
 				"eas",
@@ -720,7 +787,8 @@
 			"terrain": "sea",
 			"display_name": "Syria"
 		},
-		"smy": {
+		{
+			"short_name": "smy",
 			"adjacent": [
 				"ank",
 				"arm",
@@ -732,8 +800,8 @@
 			"terrain": "sea",
 			"display_name": "Smyrna"
 		},
-		"_comment12": "Russia",
-		"fin": {
+		{
+			"short_name": "fin",
 			"adjacent": [
 				"nwy",
 				"stp",
@@ -743,7 +811,8 @@
 			"terrain": "sea",
 			"display_name": "Finland"
 		},
-		"stp": {
+		{
+			"short_name": "stp",
 			"adjacent": [
 				"bar",
 				"mos",
@@ -765,7 +834,8 @@
 				]
 			}
 		},
-		"mos": {
+		{
+			"short_name": "mos",
 			"adjacent": [
 				"stp",
 				"sev",
@@ -776,7 +846,8 @@
 			"terrain": "sea",
 			"display_name": "Moscow"
 		},
-		"lvn": {
+		{
+			"short_name": "lvn",
 			"adjacent": [
 				"bot",
 				"stp",
@@ -788,7 +859,8 @@
 			"terrain": "sea",
 			"display_name": "Livonia"
 		},
-		"war": {
+		{
+			"short_name": "war",
 			"adjacent": [
 				"pru",
 				"lvn",
@@ -800,7 +872,8 @@
 			"terrain": "sea",
 			"display_name": "Warsaw"
 		},
-		"ukr": {
+		{
+			"short_name": "ukr",
 			"adjacent": [
 				"mos",
 				"sev",
@@ -811,7 +884,8 @@
 			"terrain": "sea",
 			"display_name": "Ukraine"
 		},
-		"sev": {
+		{
+			"short_name": "sev",
 			"adjacent": [
 				"mos",
 				"arm",
@@ -823,8 +897,8 @@
 			"terrain": "sea",
 			"display_name": "Sevastopol"
 		},
-		"_comment13": "Greece and such",
-		"rum": {
+		{
+			"short_name": "rum",
 			"adjacent": [
 				"ukr",
 				"sev",
@@ -837,7 +911,8 @@
 			"terrain": "sea",
 			"display_name": "Rumania"
 		},
-		"bul": {
+		{
+			"short_name": "bul",
 			"adjacent": [
 				"rum",
 				"bla",
@@ -861,7 +936,8 @@
 				]
 			}
 		},
-		"gre": {
+		{
+			"short_name": "gre",
 			"adjacent": [
 				"ser",
 				"bul",
@@ -872,7 +948,8 @@
 			"terrain": "sea",
 			"display_name": "Greece"
 		},
-		"alb": {
+		{
+			"short_name": "alb",
 			"adjacent": [
 				"tri",
 				"ser",
@@ -883,7 +960,8 @@
 			"terrain": "sea",
 			"display_name": "Albania"
 		},
-		"ser": {
+		{
+			"short_name": "ser",
 			"adjacent": [
 				"bud",
 				"rum",
@@ -895,7 +973,7 @@
 			"terrain": "sea",
 			"display_name": "Serbia"
 		}
-	},
+	],
 	"nations": {
 		"eng": {
 			"display_name": "England",

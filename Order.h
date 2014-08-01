@@ -16,7 +16,7 @@ protected:
 	bool valid;
 	std::shared_ptr<Terr> origin;
 
-	Order() : valid{false} {}
+	Order() : valid{true} {}
 
 };
 

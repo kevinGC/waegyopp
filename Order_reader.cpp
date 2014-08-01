@@ -9,7 +9,7 @@ using std::string;
 using std::unique_ptr;
 using std::cin; using std::getline;
 // using std::cout; using std::endl; // TODO remove
-using std::invalid_argument;
+using std::invalid_argument; // TODO do I really want this exception everywhere?
 
 
 // returs false if 'end' is read. Returns true is leaves cin unaltered if

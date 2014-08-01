@@ -21,7 +21,7 @@ Hold::Hold(const std::string& line)
 	origin = Model::get().get_terr(matches[1]);
 	if(!origin)
 		throw invalid_argument("invalid territory name:" + line);
-	auto piece = origin->get_piece().lock();
+	auto piece = origin->get_piece();
 	if(!piece)
 		throw invalid_argument("not piece at territory:" + line);
 	if(piece->get_type_string() != matches[0])
