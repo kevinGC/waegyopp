@@ -4,6 +4,7 @@
 #include <iterator>
 #include <stdexcept>
 #include <vector>
+#include <typeinfo>
 #include <iostream> // TODO delete
 using std::cout; using std::endl; // TODO delete
 using std::vector;
@@ -15,21 +16,11 @@ using std::istreambuf_iterator;
 using std::invalid_argument;
 
 
-Model& Model::get()
-{
-	static Model model("default_world.json");
-	return model;
-}
-
-std::shared_ptr<Terr> Model::get_terr(const string& terr_name)
-{
-	auto it = terrs.find(terr_name);
-	if(it == terrs.end())
-		return shared_ptr<Terr>{};
-	return it->second;
-}
-
-Model::Model(const string& filename) : terrs{}
+Model::Model(const string& filename)
+	: terrs{}
+	, seas{}
+	, coastals{}
+	, landlocks{}
 {
 	// get string
 	ifstream ifs{filename};
@@ -43,6 +34,12 @@ Model::Model(const string& filename) : terrs{}
 	const Json::Value nations = get_val("nations", root);
 
 	set_terrs(locations[0], locations, terrs);
+	// TODO set up other 3 maps with typeid
+	for(auto terr : terrs) {
+		switch(typeid(terr) == typeid(terrs::element_type)) {
+			default: break;
+		}
+	}
 
 	// create nations
 }

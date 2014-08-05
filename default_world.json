@@ -224,21 +224,7 @@
 				"naf"
 			],
 			"terrain": "sea",
-			"display_name": "Western Mediterranian",
-			"coasts": {
-				"north": [
-					"gas",
-					"mid",
-					"por"
-				],
-				"south": [
-					"por",
-					"mid",
-					"wes",
-					"gol",
-					"mar"
-				]
-			}
+			"display_name": "Western Mediterranian"	
 		},
 		{
 			"short_name": "gol",
@@ -394,7 +380,25 @@
 				"por"
 			],
 			"terrain": "sea",
-			"display_name": "Spain"
+			"display_name": "Spain",
+			"coasts": [
+				{
+					"adj1": "gas",
+					"adj2": "por",
+					"seas": [
+						"mid"
+					]
+				},
+				{
+					"adj1": "por",
+					"adj2": "mar",
+					"seas": [
+						"mid",
+						"wes",
+						"gol"
+					]
+				}
+			]
 		},
 		{
 			"short_name": "naf",
@@ -822,17 +826,22 @@
 			],
 			"terrain": "sea",
 			"display_name": "St. Petersburg",
-			"coasts": {
-				"north": [
-					"bar",
-					"nwy"
-				],
-				"south": [
-					"fin",
-					"bot",
-					"lvn"
-				]
-			}
+			"coasts": [
+				{
+					"adj1": "bar",
+					"adj2": null,
+					"seas": [
+						"nwy"
+					]
+				},
+				{
+					"adj1": "fin",
+					"adj2": "lvn",
+					"seas": [
+						"bot"
+					]
+				}
+			]
 		},
 		{
 			"short_name": "mos",
@@ -923,18 +932,22 @@
 			],
 			"terrain": "sea",
 			"display_name": "Bulgaria",
-			"coasts": {
-				"north": [
-					"rum",
-					"bla",
-					"con"
-				],
-				"south": [
-					"con",
-					"aeg",
-					"gre"
-				]
-			}
+			"coasts": [
+				{
+					"adj1": "rum",
+					"adj2": "con",
+					"seas": [
+						"bla"
+					]
+				},
+				{
+					"adj1": "con",
+					"adj2": "gre",
+					"seas": [
+						"aeg"
+					]
+				}
+			]
 		},
 		{
 			"short_name": "gre",

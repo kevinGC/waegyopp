@@ -5,6 +5,7 @@
 #include <string>
 #include <memory>
 #include <map>
+class Terr;
 
 
 // TODO comments...

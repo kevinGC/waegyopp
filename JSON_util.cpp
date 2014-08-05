@@ -1,6 +1,7 @@
 #include "JSON_util.h"
-#include "Reg_terr.h"
-#include "Two_coast_terr.h"
+#include "Sea.h"
+#include "Coastal.h"
+#include "Landlock.h"
 #include <stdexcept>
 using std::string;
 using std::map;
@@ -15,20 +16,20 @@ Json::Value get_val(const string& key, const Json::Value& root)
 	return val;
 }
 
-// TODO need to check for "coastal" isNull(), or is "single" or "double" on
-// land territories
+// TODO add "landlock" to default_world.json
+// TODO coastals need to specify coast nums of each adj coast
+// TODO all Coastals need coast fields. Adjacent refers only to adjacent Landlocks
 void set_terrs(const Json::Value& loc,
 	const Json::Value& locs,
 	map<string,shared_ptr<Terr>>& terrs)
 {
-	if(loc["terrain"].asString() == "sea") {
+	string terrain = loc["terrain"].asString();
+	if(terrain == "sea") {
 		new Sea(loc, locs, terrs);
-	} else if(loc["coastal"].isNull()) {
+	} else if(terrain == "landlock") {
 		new Landlock(loc, locs, terrs);
-	} else if(loc["coastal"].asString() == "single") {
-		new SingleCoast(loc, locs, terrs);
-	} else if(loc["coastal"].asString() == "double") {
-		new DoubleCoast(loc, locs, terrs);
+	} else if(terrain == "coastal") {
+		new Coastal(loc, locs, terrs);
 	} else {
 		throw invalid_argument("unrecognized Terr subtype");
 	}
